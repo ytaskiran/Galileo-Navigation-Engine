@@ -1,10 +1,10 @@
-Start testing: Sep 09 01:41 PDT
+Start testing: Sep 09 04:12 PDT
 ----------------------------------------------------------
-1/3 Testing: GalileoPageTest.WordType1
-1/3 Test: GalileoPageTest.WordType1
+1/6 Testing: GalileoPageTest.WordType1
+1/6 Test: GalileoPageTest.WordType1
 Command: "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test" "--gtest_filter=GalileoPageTest.WordType1" "--gtest_also_run_disabled_tests"
 Directory: /home/cezeri/NavigationEngine/NavEngGalRefactor/build
-"GalileoPageTest.WordType1" start time: Sep 09 01:41 PDT
+"GalileoPageTest.WordType1" start time: Sep 09 04:12 PDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -17,21 +17,21 @@ Note: Google Test filter = GalileoPageTest.WordType1
 [----------] 1 test from GalileoPageTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GalileoPageTest.WordType1" end time: Sep 09 01:41 PDT
+"GalileoPageTest.WordType1" end time: Sep 09 04:12 PDT
 "GalileoPageTest.WordType1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/3 Testing: GalileoPageTest.WordType2
-2/3 Test: GalileoPageTest.WordType2
+2/6 Testing: GalileoPageTest.WordType2
+2/6 Test: GalileoPageTest.WordType2
 Command: "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test" "--gtest_filter=GalileoPageTest.WordType2" "--gtest_also_run_disabled_tests"
 Directory: /home/cezeri/NavigationEngine/NavEngGalRefactor/build
-"GalileoPageTest.WordType2" start time: Sep 09 01:41 PDT
+"GalileoPageTest.WordType2" start time: Sep 09 04:12 PDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -44,21 +44,21 @@ Note: Google Test filter = GalileoPageTest.WordType2
 [----------] 1 test from GalileoPageTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (0 ms total)
+[==========] 1 test from 1 test suite ran. (1 ms total)
 [  PASSED  ] 1 test.
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GalileoPageTest.WordType2" end time: Sep 09 01:41 PDT
+"GalileoPageTest.WordType2" end time: Sep 09 04:12 PDT
 "GalileoPageTest.WordType2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/3 Testing: GalileoPageTest.WordType3
-3/3 Test: GalileoPageTest.WordType3
+3/6 Testing: GalileoPageTest.WordType3
+3/6 Test: GalileoPageTest.WordType3
 Command: "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test" "--gtest_filter=GalileoPageTest.WordType3" "--gtest_also_run_disabled_tests"
 Directory: /home/cezeri/NavigationEngine/NavEngGalRefactor/build
-"GalileoPageTest.WordType3" start time: Sep 09 01:41 PDT
+"GalileoPageTest.WordType3" start time: Sep 09 04:12 PDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,8 +77,89 @@ Note: Google Test filter = GalileoPageTest.WordType3
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GalileoPageTest.WordType3" end time: Sep 09 01:41 PDT
+"GalileoPageTest.WordType3" end time: Sep 09 04:12 PDT
 "GalileoPageTest.WordType3" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 09 01:41 PDT
+4/6 Testing: GalileoPageTest.WordType4
+4/6 Test: GalileoPageTest.WordType4
+Command: "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test" "--gtest_filter=GalileoPageTest.WordType4" "--gtest_also_run_disabled_tests"
+Directory: /home/cezeri/NavigationEngine/NavEngGalRefactor/build
+"GalileoPageTest.WordType4" start time: Sep 09 04:12 PDT
+Output:
+----------------------------------------------------------
+Running main() from /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GalileoPageTest.WordType4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GalileoPageTest
+[ RUN      ] GalileoPageTest.WordType4
+[       OK ] GalileoPageTest.WordType4 (0 ms)
+[----------] 1 test from GalileoPageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GalileoPageTest.WordType4" end time: Sep 09 04:12 PDT
+"GalileoPageTest.WordType4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: GalileoPageTest.WordType5
+5/6 Test: GalileoPageTest.WordType5
+Command: "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test" "--gtest_filter=GalileoPageTest.WordType5" "--gtest_also_run_disabled_tests"
+Directory: /home/cezeri/NavigationEngine/NavEngGalRefactor/build
+"GalileoPageTest.WordType5" start time: Sep 09 04:12 PDT
+Output:
+----------------------------------------------------------
+Running main() from /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GalileoPageTest.WordType5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GalileoPageTest
+[ RUN      ] GalileoPageTest.WordType5
+[       OK ] GalileoPageTest.WordType5 (0 ms)
+[----------] 1 test from GalileoPageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GalileoPageTest.WordType5" end time: Sep 09 04:12 PDT
+"GalileoPageTest.WordType5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: GalileoPageTest.WordType6
+6/6 Test: GalileoPageTest.WordType6
+Command: "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test" "--gtest_filter=GalileoPageTest.WordType6" "--gtest_also_run_disabled_tests"
+Directory: /home/cezeri/NavigationEngine/NavEngGalRefactor/build
+"GalileoPageTest.WordType6" start time: Sep 09 04:12 PDT
+Output:
+----------------------------------------------------------
+Running main() from /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GalileoPageTest.WordType6
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GalileoPageTest
+[ RUN      ] GalileoPageTest.WordType6
+[       OK ] GalileoPageTest.WordType6 (0 ms)
+[----------] 1 test from GalileoPageTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GalileoPageTest.WordType6" end time: Sep 09 04:12 PDT
+"GalileoPageTest.WordType6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 09 04:12 PDT

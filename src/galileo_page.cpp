@@ -10,6 +10,7 @@
 #include <cmath>
 #include <iostream>
 #include "galileo_page.hpp"
+#include <bitset>
 
 
 
@@ -109,7 +110,7 @@ void GalileoPage<WordType::EPHEMERIS_4__CLOCK_CORRECTION, TrackingCode::None>::i
     UINT8   svId_u8      =  Word1.svid;
     FLOAT64 Cic_rad_f64  =  concatenateBits(Word1.C_ic_1, Word2.C_ic_2, 8, 8) * pow(2, -29);
     FLOAT64 Cis_rad_f64  =  Word2.C_is * pow(2, -29);
-    UINT16  t0c          =  concatenateBits(Word2.t0c_1, Word3.t0c_2, 8, 6) * 60;
+    UINT32  t0c          =  concatenateBits(Word2.t0c_1, Word3.t0c_2, 8, 6) * 60;
     FLOAT64 af0_s_f64    =  concatenateBits(Word3.clock_bias_corr_1, Word4.clock_bias_corr_2, 26, 5) * pow(2, -34);
     FLOAT64 af1_ss_f64   =  concatenateBits(Word4.clock_drift_corr_1, Word5.clock_drift_corr_2, 13, 8) * pow(2, -46);
     FLOAT64 af2_ss2_f64  =  Word5.clock_drift_rate_corr * pow(2, -59);
@@ -151,6 +152,7 @@ void GalileoPage<WordType::IONOSPHERIC_CORRECTION__BGD__SIG_HEALTH__DVS__GST, Tr
     gal_nav_data.iono.ai2_f64                 =  ai2_f64;
     gal_nav_data.eph[svId-1].bgdE1E5b         =  bgdE1E5b;
     gal_nav_data.eph[svId-1].healthE5b        =  healthE5b;
+    gal_nav_data.eph[svId-1].healthE1         =  healthE1;
     gal_nav_data.eph[svId-1].dataValidityE5b  =  dataValidityE5b;
     gal_nav_data.eph[svId-1].dataValidityE1   =  dataValidityE1;
 }   

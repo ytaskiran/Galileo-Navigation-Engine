@@ -1,4 +1,7 @@
-GalileoPageTest.WordType1 4 0.000524548
-GalileoPageTest.WordType2 2 0.000958824
-GalileoPageTest.WordType3 1 0.00197659
+GalileoPageTest.WordType1 11 0.000196148
+GalileoPageTest.WordType2 9 0.000231164
+GalileoPageTest.WordType3 7 0.000282116
+GalileoPageTest.WordType4 4 0.000496132
+GalileoPageTest.WordType5 3 0.000750783
+GalileoPageTest.WordType6 2 0.00143788
 ---

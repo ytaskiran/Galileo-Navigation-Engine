@@ -25,4 +25,6 @@ iostream
 -
 galileo_page.hpp
 /home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.hpp
+bitset
+-
 

@@ -40,7 +40,7 @@ struct Ephemeris<SatelliteSystem::Galileo> {
     UINT8   svId_u8{};              ///!< Satellite identifier PRN
     UINT16  iodNav{};               ///!< Ephemeris and clock correction Issue of Data
     UINT8   sisaIndexE1E5b{};       ///!< Signal-In-Space Accuracy index for dual frequency E1-E5b
-    UINT16  t0c{};                  ///!< Clock correction data reference Time of Week
+    UINT32  t0c{};                  ///!< Clock correction data reference Time of Week
     INT16   bgdE1E5b{};             ///!< E1-E5b Broadcast Group Delay
     UINT8   healthE1{};            ///!< E1-B Signal Health Status
     UINT8   dataValidityE1{};      ///!< E1-B Data Validity Status
