@@ -4,6 +4,20 @@
 #define PRECISION 6
 
 
+
+TEST(GalileoFunctionTest, ConcatenateBits)
+{
+  std::vector<std::vector<uint16_t>> data_bytes = {{0x0a, 0xa9}, {0xb1, 0xa8}, {0x2b, 0x75}};
+  std::vector<uint16_t> concatenated_data = {0xaa9, 0xb1a8, 0x2b75};
+
+  uint8_t index = 0;
+  for (auto data : data_bytes)
+  {
+    EXPECT_EQ(concatenateBits(data[0], data[1], 8, 8), concatenated_data[index]);
+    ++index;
+  }
+}
+
 /**
  * @note  EXPECT_NEAR precision is set to 6
  *        while compared data obtained with

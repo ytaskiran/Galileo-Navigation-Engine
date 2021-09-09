@@ -1,3 +1,5 @@
+add_test( GalileoFunctionTest.ConcatenateBits /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoFunctionTest.ConcatenateBits]==] --gtest_also_run_disabled_tests)
+set_tests_properties( GalileoFunctionTest.ConcatenateBits PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
 add_test( GalileoPageTest.WordType1 /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoPageTest.WordType1]==] --gtest_also_run_disabled_tests)
 set_tests_properties( GalileoPageTest.WordType1 PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
 add_test( GalileoPageTest.WordType2 /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoPageTest.WordType2]==] --gtest_also_run_disabled_tests)
@@ -10,4 +12,4 @@ add_test( GalileoPageTest.WordType5 /home/cezeri/NavigationEngine/NavEngGalRefac
 set_tests_properties( GalileoPageTest.WordType5 PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
 add_test( GalileoPageTest.WordType6 /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoPageTest.WordType6]==] --gtest_also_run_disabled_tests)
 set_tests_properties( GalileoPageTest.WordType6 PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
-set( galileo_test_TESTS GalileoPageTest.WordType1 GalileoPageTest.WordType2 GalileoPageTest.WordType3 GalileoPageTest.WordType4 GalileoPageTest.WordType5 GalileoPageTest.WordType6)
+set( galileo_test_TESTS GalileoFunctionTest.ConcatenateBits GalileoPageTest.WordType1 GalileoPageTest.WordType2 GalileoPageTest.WordType3 GalileoPageTest.WordType4 GalileoPageTest.WordType5 GalileoPageTest.WordType6)
