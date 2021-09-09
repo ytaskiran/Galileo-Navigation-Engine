@@ -1,0 +1,4 @@
+GalileoPageTest.WordType1 4 0.000524548
+GalileoPageTest.WordType2 2 0.000958824
+GalileoPageTest.WordType3 1 0.00197659
+---

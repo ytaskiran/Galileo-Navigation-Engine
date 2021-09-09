@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/galileo_nav.hpp
+navigation_base.hpp
+../include/navigation_base.hpp
+
+../include/galileo_page.hpp
+galileo_nav.hpp
+../include/galileo_nav.hpp
+
+../include/navigation_base.hpp
+type_traits
+-
+
+/home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp
+cmath
+-
+iostream
+-
+galileo_page.hpp
+/home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.hpp
+

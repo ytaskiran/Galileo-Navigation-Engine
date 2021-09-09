@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgalileo_page.a  CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o
+/usr/bin/ranlib libgalileo_page.a

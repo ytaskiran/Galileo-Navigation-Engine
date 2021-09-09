@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o  -o galileo_test  libgalileo_page.a lib/libgtest_main.a lib/libgtest.a -lpthread 

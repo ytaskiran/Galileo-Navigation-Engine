@@ -1,0 +1,7 @@
+add_test( GalileoPageTest.WordType1 /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoPageTest.WordType1]==] --gtest_also_run_disabled_tests)
+set_tests_properties( GalileoPageTest.WordType1 PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
+add_test( GalileoPageTest.WordType2 /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoPageTest.WordType2]==] --gtest_also_run_disabled_tests)
+set_tests_properties( GalileoPageTest.WordType2 PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
+add_test( GalileoPageTest.WordType3 /home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test [==[--gtest_filter=GalileoPageTest.WordType3]==] --gtest_also_run_disabled_tests)
+set_tests_properties( GalileoPageTest.WordType3 PROPERTIES WORKING_DIRECTORY /home/cezeri/NavigationEngine/NavEngGalRefactor/build)
+set( galileo_test_TESTS GalileoPageTest.WordType1 GalileoPageTest.WordType2 GalileoPageTest.WordType3)
