@@ -221,6 +221,8 @@ void NavEng<SatelliteSystem::Galileo>::processPage(const std::uint32_t(&word)[10
 WordType NavEng<SatelliteSystem::Galileo>::getType(UINT32 word)
 {
     first_word.word = word;
+
+    if (first_word.page_type == 1) return WordType::ALERT; // Alert page
     
     if (first_word.word_type == 1) return WordType::EPHEMERIS_1;
     else if (first_word.word_type == 2) return WordType::EPHEMERIS_2;

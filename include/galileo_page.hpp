@@ -27,7 +27,8 @@ enum class WordType
     ALMANAC_4,
     REDUCED_CED = 16,
     FEC2,
-    DUMMY = 63
+    DUMMY = 63,
+    ALERT
   };
 
 
