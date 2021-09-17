@@ -13,16 +13,20 @@
 #define NAVIGATION_BASE_HPP
 
 #include <type_traits>
+#include <stdint.h>
+#include <cstdio>
+#include <iostream>
 
 #define UINT8  uint8_t  
 #define UINT16 uint16_t 
-#define UINT32 unsigned int
+#define UINT32 uint32_t
 #define UINT64 uint64_t 
 #define INT8  int8_t  
 #define INT16 int16_t 
-#define INT32 int
+#define INT32 int32_t
 #define INT64 int64_t 
 #define FLOAT64 double
+#define FLOAT32 float
 
 
 enum class SatelliteSystem : std::uint8_t
@@ -34,23 +38,6 @@ enum class SatelliteSystem : std::uint8_t
     QZSS          = 5,
     Glonass       = 6,
     None          = 7,
-};
-
-enum class TrackingCode : std::int8_t
-{
-    L1CA      = 0, ///!< GPS L1C/A, SBAS, QZSS
-    B1I_D1    = 0, ///!< BeiDou B1I D1
-    L1OF      = 0, ///!< GLONASS
-    E1        = 1, ///!< Galileo  E1 B
-    B1I_D2    = 1, ///!< BeiDou B1I D2
-    B2I_D1    = 2, ///!< BeiDou B2I D1
-    L2OF      = 2, ///!< GLONASS
-    GPS_L2CL  = 3, ///!< GPS L2CL
-    B2I_D2    = 3, ///!< BeiDou B2I D2
-    L2CM      = 4, ///!< GPS L2CM, QZSS
-    E5b       = 5, ///!< Galileo
-    QZSS_L2CL = 5, ///!< QZSS
-    None      = -1 ///!< None
 };
 
 template<SatelliteSystem s>

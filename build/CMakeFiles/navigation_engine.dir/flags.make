@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/cezeri/NavigationEngine/NavEngGalRefactor/include 
+CXX_INCLUDES = -I/home/cezeri/NavigationEngine/NavEngGalileo/include 
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cezeri/NavigationEngine/NavEngGalRefactor
+CMAKE_SOURCE_DIR = /home/cezeri/NavigationEngine/NavEngGalileo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cezeri/NavigationEngine/NavEngGalRefactor/build
+CMAKE_BINARY_DIR = /home/cezeri/NavigationEngine/NavEngGalileo/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/galileo_page.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/galileo_page.dir/flags.make
 
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: CMakeFiles/galileo_page.dir/flags.make
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: ../src/galileo_page.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o -c /home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o -c /home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.cpp
 
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/galileo_page.dir/src/galileo_page.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp > CMakeFiles/galileo_page.dir/src/galileo_page.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.cpp > CMakeFiles/galileo_page.dir/src/galileo_page.cpp.i
 
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/galileo_page.dir/src/galileo_page.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp -o CMakeFiles/galileo_page.dir/src/galileo_page.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.cpp -o CMakeFiles/galileo_page.dir/src/galileo_page.cpp.s
 
 # Object files for target galileo_page
 galileo_page_OBJECTS = \
@@ -80,7 +80,7 @@ galileo_page_EXTERNAL_OBJECTS =
 libgalileo_page.a: CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o
 libgalileo_page.a: CMakeFiles/galileo_page.dir/build.make
 libgalileo_page.a: CMakeFiles/galileo_page.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgalileo_page.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgalileo_page.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/galileo_page.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/galileo_page.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/galileo_page.dir/clean:
 .PHONY : CMakeFiles/galileo_page.dir/clean
 
 CMakeFiles/galileo_page.dir/depend:
-	cd /home/cezeri/NavigationEngine/NavEngGalRefactor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezeri/NavigationEngine/NavEngGalRefactor /home/cezeri/NavigationEngine/NavEngGalRefactor /home/cezeri/NavigationEngine/NavEngGalRefactor/build /home/cezeri/NavigationEngine/NavEngGalRefactor/build /home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles/galileo_page.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cezeri/NavigationEngine/NavEngGalileo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezeri/NavigationEngine/NavEngGalileo /home/cezeri/NavigationEngine/NavEngGalileo /home/cezeri/NavigationEngine/NavEngGalileo/build /home/cezeri/NavigationEngine/NavEngGalileo/build /home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles/galileo_page.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/galileo_page.dir/depend
 

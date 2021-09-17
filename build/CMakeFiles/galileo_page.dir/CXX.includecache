@@ -13,18 +13,26 @@ navigation_base.hpp
 ../include/galileo_page.hpp
 galileo_nav.hpp
 ../include/galileo_nav.hpp
+math_constants.hpp
+../include/math_constants.hpp
+
+../include/math_constants.hpp
+iosfwd
+-
 
 ../include/navigation_base.hpp
 type_traits
 -
-
-/home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp
-cmath
+stdint.h
+-
+cstdio
 -
 iostream
 -
-galileo_page.hpp
-/home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.hpp
-bitset
+
+/home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.cpp
+cmath
 -
+galileo_page.hpp
+/home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.hpp
 

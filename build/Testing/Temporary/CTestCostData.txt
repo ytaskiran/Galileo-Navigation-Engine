@@ -1,8 +1,8 @@
-GalileoPageTest.WordType1 12 0.000228995
-GalileoPageTest.WordType2 10 0.00020527
-GalileoPageTest.WordType3 8 0.000273422
-GalileoPageTest.WordType4 5 0.000365168
-GalileoPageTest.WordType5 4 0.00046401
-GalileoPageTest.WordType6 3 0.000657766
-GalileoFunctionTest.ConcatenateBits 1 0.00234489
+GalileoFunctionTest.ConcatenateBits 2 0.00141442
+GalileoPageTest.WordType1 2 0.00130211
+GalileoPageTest.WordType2 2 0.00134198
+GalileoPageTest.WordType3 2 0.00137029
+GalileoPageTest.WordType4 2 0.00127803
+GalileoPageTest.WordType5 2 0.00136179
+GalileoPageTest.WordType6 2 0.00153831
 ---

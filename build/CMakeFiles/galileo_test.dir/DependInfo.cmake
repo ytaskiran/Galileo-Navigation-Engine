@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cezeri/NavigationEngine/NavEngGalRefactor/test/galileo_unit_tests.cpp" "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o"
+  "/home/cezeri/NavigationEngine/NavEngGalileo/test/galileo_unit_tests.cpp" "/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles/galileo_page.dir/DependInfo.cmake"
-  "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles/galileo_page.dir/DependInfo.cmake"
+  "/home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

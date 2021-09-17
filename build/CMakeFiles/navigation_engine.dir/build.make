@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cezeri/NavigationEngine/NavEngGalRefactor
+CMAKE_SOURCE_DIR = /home/cezeri/NavigationEngine/NavEngGalileo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cezeri/NavigationEngine/NavEngGalRefactor/build
+CMAKE_BINARY_DIR = /home/cezeri/NavigationEngine/NavEngGalileo/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/navigation_engine.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/navigation_engine.dir/flags.make
 
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: CMakeFiles/navigation_engine.dir/flags.make
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../src/navigation_engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o -c /home/cezeri/NavigationEngine/NavEngGalRefactor/src/navigation_engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o -c /home/cezeri/NavigationEngine/NavEngGalileo/src/navigation_engine.cpp
 
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezeri/NavigationEngine/NavEngGalRefactor/src/navigation_engine.cpp > CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezeri/NavigationEngine/NavEngGalileo/src/navigation_engine.cpp > CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.i
 
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezeri/NavigationEngine/NavEngGalRefactor/src/navigation_engine.cpp -o CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezeri/NavigationEngine/NavEngGalileo/src/navigation_engine.cpp -o CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.s
 
 # Object files for target navigation_engine
 navigation_engine_OBJECTS = \
@@ -80,7 +80,7 @@ navigation_engine_EXTERNAL_OBJECTS =
 libnavigation_engine.a: CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o
 libnavigation_engine.a: CMakeFiles/navigation_engine.dir/build.make
 libnavigation_engine.a: CMakeFiles/navigation_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libnavigation_engine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libnavigation_engine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/navigation_engine.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/navigation_engine.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/navigation_engine.dir/clean:
 .PHONY : CMakeFiles/navigation_engine.dir/clean
 
 CMakeFiles/navigation_engine.dir/depend:
-	cd /home/cezeri/NavigationEngine/NavEngGalRefactor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezeri/NavigationEngine/NavEngGalRefactor /home/cezeri/NavigationEngine/NavEngGalRefactor /home/cezeri/NavigationEngine/NavEngGalRefactor/build /home/cezeri/NavigationEngine/NavEngGalRefactor/build /home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles/navigation_engine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cezeri/NavigationEngine/NavEngGalileo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezeri/NavigationEngine/NavEngGalileo /home/cezeri/NavigationEngine/NavEngGalileo /home/cezeri/NavigationEngine/NavEngGalileo/build /home/cezeri/NavigationEngine/NavEngGalileo/build /home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles/navigation_engine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/navigation_engine.dir/depend
 

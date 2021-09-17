@@ -30,7 +30,7 @@ struct Almanac<SatelliteSystem::Galileo> {
     FLOAT64  m0_rad_f64{};          ///!< Mean Anomaly at reference time(rad)
     FLOAT64  af0_s_f64{};           ///!< Af0(s): Satellite clock bias
     FLOAT64  af1_ss_f64{};          ///!< Af1(s/s): Satellite clock rate
-    UINT8    healthE1{};           ///!< Satellite health information
+    UINT8    healthE1{};            ///!< Satellite health information
     UINT8    healthE5b{};           ///!< Satellite health information
 };
 
@@ -39,11 +39,14 @@ template<>
 struct Ephemeris<SatelliteSystem::Galileo> {
     UINT8   svId_u8{};              ///!< Satellite identifier PRN
     UINT16  iodNav{};               ///!< Ephemeris and clock correction Issue of Data
-    UINT8   sisaIndexE1E5b{};       ///!< Signal-In-Space Accuracy index for dual frequency E1-E5b
-    UINT32  t0c{};                  ///!< Clock correction data reference Time of Week
+    FLOAT32 sisaIndexE1E5b{};       ///!< Signal-In-Space Accuracy index for dual frequency E1-E5b
+    FLOAT64 Toe{};                  ///!< Toe (s) in week
+    FLOAT64 Toc{};                  ///!< Clock correction data reference Time of Week
+    FLOAT64 txmit_time{};           ///!< Time of transmission sn
+
     INT16   bgdE1E5b{};             ///!< E1-E5b Broadcast Group Delay
-    UINT8   healthE1{};            ///!< E1-B Signal Health Status
-    UINT8   dataValidityE1{};      ///!< E1-B Data Validity Status
+    UINT8   healthE1{};             ///!< E1 Signal Health Status
+    UINT8   dataValidityE1{};       ///!< E1 Data Validity Status
     UINT8   healthE5b{};            ///!< E5b Signal Health Status
     UINT8   dataValidityE5b{};      ///!< E5b Data Validity Status
 
@@ -62,7 +65,6 @@ struct Ephemeris<SatelliteSystem::Galileo> {
     FLOAT64 omega0_rad_f64{};       ///!< Longitude of ascending node of orbital plane at weekly epoch
     FLOAT64 i0_rad_f64{};           ///!< Inclination angle(rad), at reference time
     FLOAT64 IDOT_rad_sec_f64{};     ///!< Inclination Rate rad/sec
-    FLOAT64 toe_sn_f64{};           ///!< Toe (s) in week
 
     /// Harmonic perturbations
     FLOAT64 Cis_rad_f64{};          ///!< Amplitude of sine harmonic correction term to angle of inclination
@@ -87,7 +89,7 @@ struct UTC<SatelliteSystem::Galileo> {
     FLOAT64 A0_s_f64{};             ///!< First parameter of UTC polynomial
     FLOAT64 A1_ss_f64{};            ///!< Second parameter of UTC polynomial
     FLOAT64 DtLS_s_f64{};           ///!< Delta time due to current leap seconds
-    FLOAT64 Tot_s_f64{};            ///!< UTC parameters reference time of week (GPS time)
+    FLOAT64 Tot_s_f64{};            ///!< UTC parameters reference time of week
     FLOAT64 WNt_f64{};              ///!< UTC parameters reference week number
     FLOAT64 WNlsf_f64{};            ///!< Week number at the end of which the future leap second becomes effective
     FLOAT64 Dn_f64{};               ///!< Day number at the end of which the future leap second becomes effective
@@ -114,6 +116,7 @@ struct GalileoNavData {
     GalileoUTC        utc{};
     GalileoTimeOffset time_offset{};
     GalileoIonosphere iono{};
+    UINT32            week_u32{};
 };
 
 

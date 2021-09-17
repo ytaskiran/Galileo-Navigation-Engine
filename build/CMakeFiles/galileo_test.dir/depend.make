@@ -3,6 +3,7 @@
 
 CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o: ../include/galileo_nav.hpp
 CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o: ../include/galileo_page.hpp
+CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o: ../include/math_constants.hpp
 CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o: ../include/navigation_base.hpp
 CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o: ../test/galileo_unit_tests.cpp
 CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-death-test.h

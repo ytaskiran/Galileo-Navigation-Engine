@@ -13,16 +13,28 @@ navigation_base.hpp
 ../include/galileo_page.hpp
 galileo_nav.hpp
 ../include/galileo_nav.hpp
+math_constants.hpp
+../include/math_constants.hpp
+
+../include/math_constants.hpp
+iosfwd
+-
 
 ../include/navigation_base.hpp
 type_traits
 -
+stdint.h
+-
+cstdio
+-
+iostream
+-
 
-/home/cezeri/NavigationEngine/NavEngGalRefactor/test/galileo_unit_tests.cpp
+/home/cezeri/NavigationEngine/NavEngGalileo/test/galileo_unit_tests.cpp
 gtest/gtest.h
-/home/cezeri/NavigationEngine/NavEngGalRefactor/test/gtest/gtest.h
+/home/cezeri/NavigationEngine/NavEngGalileo/test/gtest/gtest.h
 galileo_page.hpp
-/home/cezeri/NavigationEngine/NavEngGalRefactor/test/galileo_page.hpp
+/home/cezeri/NavigationEngine/NavEngGalileo/test/galileo_page.hpp
 
 _deps/googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

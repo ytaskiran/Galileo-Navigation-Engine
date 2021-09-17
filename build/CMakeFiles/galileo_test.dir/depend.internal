@@ -4,8 +4,9 @@
 CMakeFiles/galileo_test.dir/test/galileo_unit_tests.cpp.o
  ../include/galileo_nav.hpp
  ../include/galileo_page.hpp
+ ../include/math_constants.hpp
  ../include/navigation_base.hpp
- /home/cezeri/NavigationEngine/NavEngGalRefactor/test/galileo_unit_tests.cpp
+ /home/cezeri/NavigationEngine/NavEngGalileo/test/galileo_unit_tests.cpp
  _deps/googletest-src/googletest/include/gtest/gtest-death-test.h
  _deps/googletest-src/googletest/include/gtest/gtest-matchers.h
  _deps/googletest-src/googletest/include/gtest/gtest-message.h

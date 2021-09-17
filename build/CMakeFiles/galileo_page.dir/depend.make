@@ -3,6 +3,7 @@
 
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: ../include/galileo_nav.hpp
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: ../include/galileo_page.hpp
+CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: ../include/math_constants.hpp
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: ../include/navigation_base.hpp
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o: ../src/galileo_page.cpp
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp" "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o"
+  "/home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.cpp" "/home/cezeri/NavigationEngine/NavEngGalileo/build/CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

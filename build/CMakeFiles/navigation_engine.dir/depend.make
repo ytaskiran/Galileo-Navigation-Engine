@@ -3,6 +3,7 @@
 
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../include/galileo_nav.hpp
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../include/galileo_page.hpp
+CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../include/math_constants.hpp
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../include/navigation_base.hpp
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../include/navigation_engine.hpp
 CMakeFiles/navigation_engine.dir/src/navigation_engine.cpp.o: ../src/navigation_engine.cpp

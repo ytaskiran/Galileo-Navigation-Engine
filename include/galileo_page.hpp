@@ -11,15 +11,46 @@
 #define GALILEO_PAGE_HPP
 
 #include "galileo_nav.hpp"
+#include "math_constants.hpp"
+
+enum class UbxSigId : std::uint8_t
+{
+    GPS_L1CA     = 0,
+    GPS_L2CL     = 3,
+    GPS_L2CM     = 4,
+
+    SBAS_L1CA    = 0,
+
+    GALILEO_E1C  = 0,
+    GALILEO_E1B  = 1,
+    GALILEO_E5bl = 5,
+    GALILEO_E5bQ = 6,
+
+    BeiDou_B1D1  = 0,
+    BeiDou_B1D2  = 1,
+    BeiDou_B2D1  = 2,
+    BeiDou_B2D2  = 3,
+
+    QZSS_L1CA    = 0,
+    QZSS_L1S     = 1,
+    QZSS_L2CM    = 4,
+    QZSS_L2CL    = 5,
+
+    GLONASS_L1OF = 0,
+    GLONASS_L2OF = 2,
+
+    None         = 63
+};
+
 
 enum class WordType 
-  {
+{
     SPARE,
     EPHEMERIS_1,
     EPHEMERIS_2,
     EPHEMERIS_3,
-    EPHEMERIS_4__CLOCK_CORRECTION,
-    IONOSPHERIC_CORRECTION__BGD__SIG_HEALTH__DVS__GST,
+    EPHEMERIS_4_CLOCK_CORRECTION,
+    IONOSPHERIC_CORRECTION_BGD_SIG_HEALTH_DVS_GST,
     GST_UTC_CONVERSION,
     ALMANAC_1,
     ALMANAC_2,
@@ -28,8 +59,42 @@ enum class WordType
     REDUCED_CED = 16,
     FEC2,
     DUMMY = 63,
-    ALERT
-  };
+    ALERT,
+    None
+};
+
+typedef union {
+    struct {
+        UINT32 spare          : 24 ;
+        UINT32 word_type      : 6  ;
+        UINT32 page_type      : 1  ;
+        UINT32 even_odd       : 1  ;
+    };
+    UINT32 word;
+} GalileoWord1;
+
+inline WordType as_wordtype (UINT32 type)
+{
+    switch (type)
+    {
+        case 0:  return WordType::SPARE;
+        case 1:  return WordType::EPHEMERIS_1;
+        case 2:  return WordType::EPHEMERIS_2;
+        case 3:  return WordType::EPHEMERIS_3;
+        case 4:  return WordType::EPHEMERIS_4_CLOCK_CORRECTION;
+        case 5:  return WordType::IONOSPHERIC_CORRECTION_BGD_SIG_HEALTH_DVS_GST;
+        case 6:  return WordType::GST_UTC_CONVERSION;
+        case 7:  return WordType::ALMANAC_1;
+        case 8:  return WordType::ALMANAC_2;
+        case 9:  return WordType::ALMANAC_3;
+        case 10: return WordType::ALMANAC_4;
+        case 16: return WordType::REDUCED_CED;
+        case 17: return WordType::FEC2;
+        case 63: return WordType::DUMMY;
+        case 64: return WordType::ALERT;
+        default: return WordType::None;
+    }
+}
 
 
 template <typename T>
@@ -40,16 +105,16 @@ T concatenateBits(T data1, T data2, int size1, int size2)
 }
 
 
-template<WordType word_type, TrackingCode freq_band>
+template<WordType word_type, UbxSigId sigId>
 struct GalileoPage {};
 
 
 template<>
-struct GalileoPage<WordType::EPHEMERIS_1, TrackingCode::None> {
+struct GalileoPage<WordType::EPHEMERIS_1, UbxSigId::None> {
 
     union {
         struct {
-            UINT32 t0e            : 14 ;
+            UINT32 toe            : 14 ;
             UINT32 issue_of_data  : 10 ;
             UINT32 word_type      : 6  ;
             UINT32 page_type      : 1  ;
@@ -100,7 +165,7 @@ struct GalileoPage<WordType::EPHEMERIS_1, TrackingCode::None> {
 
 
 template<>
-struct GalileoPage<WordType::EPHEMERIS_2, TrackingCode::None> {
+struct GalileoPage<WordType::EPHEMERIS_2, UbxSigId::None> {
 
     union {
         struct {
@@ -156,7 +221,7 @@ struct GalileoPage<WordType::EPHEMERIS_2, TrackingCode::None> {
 }; 
 
 template<>
-struct GalileoPage<WordType::EPHEMERIS_3, TrackingCode::None> {
+struct GalileoPage<WordType::EPHEMERIS_3, UbxSigId::None> {
 
     union {
         struct {
@@ -216,7 +281,7 @@ struct GalileoPage<WordType::EPHEMERIS_3, TrackingCode::None> {
 }; 
 
 template<>
-struct GalileoPage<WordType::EPHEMERIS_4__CLOCK_CORRECTION, TrackingCode::None> {
+struct GalileoPage<WordType::EPHEMERIS_4_CLOCK_CORRECTION, UbxSigId::None> {
 
     union {
         struct {
@@ -233,7 +298,7 @@ struct GalileoPage<WordType::EPHEMERIS_4__CLOCK_CORRECTION, TrackingCode::None> 
 
     union {
         struct {
-            UINT32 t0c_1  : 8 ;
+            UINT32 toc_1  : 8 ;
             INT32  C_is   : 16 ;
             INT32  C_ic_2 : 8  ;
         };
@@ -244,7 +309,7 @@ struct GalileoPage<WordType::EPHEMERIS_4__CLOCK_CORRECTION, TrackingCode::None> 
     union {
         struct {
             INT32  clock_bias_corr_1 : 26 ;
-            UINT32 t0c_2             : 6  ;
+            UINT32 toc_2             : 6  ;
         };
         UINT32 word;
     }Word3{};
@@ -276,7 +341,7 @@ struct GalileoPage<WordType::EPHEMERIS_4__CLOCK_CORRECTION, TrackingCode::None> 
 }; 
 
 template<>
-struct GalileoPage<WordType::IONOSPHERIC_CORRECTION__BGD__SIG_HEALTH__DVS__GST, TrackingCode::None> {
+struct GalileoPage<WordType::IONOSPHERIC_CORRECTION_BGD_SIG_HEALTH_DVS_GST, UbxSigId::None> {
 
     union {
         struct {
@@ -345,7 +410,7 @@ struct GalileoPage<WordType::IONOSPHERIC_CORRECTION__BGD__SIG_HEALTH__DVS__GST, 
 }; 
 
 template<>
-struct GalileoPage<WordType::GST_UTC_CONVERSION, TrackingCode::None> {
+struct GalileoPage<WordType::GST_UTC_CONVERSION, UbxSigId::None> {
 
     union {
         struct {
@@ -403,7 +468,7 @@ struct GalileoPage<WordType::GST_UTC_CONVERSION, TrackingCode::None> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_1, TrackingCode::E5b> {
+struct GalileoPage<WordType::ALMANAC_1, UbxSigId::GALILEO_E5bl> {
 
     union {
         struct {
@@ -464,7 +529,7 @@ struct GalileoPage<WordType::ALMANAC_1, TrackingCode::E5b> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_1, TrackingCode::E1> {
+struct GalileoPage<WordType::ALMANAC_1, UbxSigId::GALILEO_E1B> {
 
     union {
         struct {
@@ -525,7 +590,7 @@ struct GalileoPage<WordType::ALMANAC_1, TrackingCode::E1> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_2, TrackingCode::E5b> {
+struct GalileoPage<WordType::ALMANAC_2, UbxSigId::GALILEO_E5bl> {
 
     union {
         struct {
@@ -586,7 +651,7 @@ struct GalileoPage<WordType::ALMANAC_2, TrackingCode::E5b> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_2, TrackingCode::E1> {
+struct GalileoPage<WordType::ALMANAC_2, UbxSigId::GALILEO_E1B> {
 
     union {
         struct {
@@ -647,7 +712,7 @@ struct GalileoPage<WordType::ALMANAC_2, TrackingCode::E1> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_3, TrackingCode::E5b> {
+struct GalileoPage<WordType::ALMANAC_3, UbxSigId::GALILEO_E5bl> {
 
     union {
         struct {
@@ -710,7 +775,7 @@ struct GalileoPage<WordType::ALMANAC_3, TrackingCode::E5b> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_3, TrackingCode::E1> {
+struct GalileoPage<WordType::ALMANAC_3, UbxSigId::GALILEO_E1B> {
 
     union {
         struct {
@@ -773,7 +838,7 @@ struct GalileoPage<WordType::ALMANAC_3, TrackingCode::E1> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_4, TrackingCode::E5b> {
+struct GalileoPage<WordType::ALMANAC_4, UbxSigId::GALILEO_E5bl> {
 
     union {
         struct {
@@ -835,7 +900,7 @@ struct GalileoPage<WordType::ALMANAC_4, TrackingCode::E5b> {
 }; 
 
 template<>
-struct GalileoPage<WordType::ALMANAC_4, TrackingCode::E1> {
+struct GalileoPage<WordType::ALMANAC_4, UbxSigId::GALILEO_E1B> {
 
     union {
         struct {
@@ -897,7 +962,7 @@ struct GalileoPage<WordType::ALMANAC_4, TrackingCode::E1> {
 }; 
 
 template<>
-struct GalileoPage<WordType::REDUCED_CED, TrackingCode::None> {
+struct GalileoPage<WordType::REDUCED_CED, UbxSigId::None> {
 
     union {
         struct {
@@ -951,14 +1016,13 @@ struct GalileoPage<WordType::REDUCED_CED, TrackingCode::None> {
 }; 
 
 template<>
-struct GalileoPage<WordType::FEC2, TrackingCode::None> {}; 
+struct GalileoPage<WordType::FEC2, UbxSigId::None> {};
 
 template<>
-struct GalileoPage<WordType::DUMMY, TrackingCode::None> {}; 
+struct GalileoPage<WordType::DUMMY, UbxSigId::None> {};
 
 template<>
-struct GalileoPage<WordType::SPARE, TrackingCode::None> {}; 
-
+struct GalileoPage<WordType::SPARE, UbxSigId::None> {};
 
 
 

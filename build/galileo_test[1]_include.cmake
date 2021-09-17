@@ -1,5 +1,5 @@
-if(EXISTS "/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test[1]_tests.cmake")
-  include("/home/cezeri/NavigationEngine/NavEngGalRefactor/build/galileo_test[1]_tests.cmake")
+if(EXISTS "/home/cezeri/NavigationEngine/NavEngGalileo/build/galileo_test[1]_tests.cmake")
+  include("/home/cezeri/NavigationEngine/NavEngGalileo/build/galileo_test[1]_tests.cmake")
 else()
   add_test(galileo_test_NOT_BUILT galileo_test_NOT_BUILT)
 endif()

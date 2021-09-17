@@ -13,9 +13,21 @@ navigation_base.hpp
 ../include/galileo_page.hpp
 galileo_nav.hpp
 ../include/galileo_nav.hpp
+math_constants.hpp
+../include/math_constants.hpp
+
+../include/math_constants.hpp
+iosfwd
+-
 
 ../include/navigation_base.hpp
 type_traits
+-
+stdint.h
+-
+cstdio
+-
+iostream
 -
 
 ../include/navigation_engine.hpp
@@ -26,7 +38,7 @@ string
 galileo_page.hpp
 ../include/galileo_page.hpp
 
-/home/cezeri/NavigationEngine/NavEngGalRefactor/src/navigation_engine.cpp
+/home/cezeri/NavigationEngine/NavEngGalileo/src/navigation_engine.cpp
 bitset
 -
 iomanip
@@ -36,5 +48,5 @@ iostream
 algorithm
 -
 navigation_engine.hpp
-/home/cezeri/NavigationEngine/NavEngGalRefactor/src/navigation_engine.hpp
+/home/cezeri/NavigationEngine/NavEngGalileo/src/navigation_engine.hpp
 

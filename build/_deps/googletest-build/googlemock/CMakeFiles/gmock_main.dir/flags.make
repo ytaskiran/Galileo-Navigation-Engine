@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREA
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/cezeri/NavigationEngine/NavEngGalRefactor/include -isystem /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googlemock/include -isystem /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googlemock -isystem /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest/include -isystem /home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googletest 
+CXX_INCLUDES = -I/home/cezeri/NavigationEngine/NavEngGalileo/include -isystem /home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googlemock/include -isystem /home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googlemock -isystem /home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googletest/include -isystem /home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googletest 
 

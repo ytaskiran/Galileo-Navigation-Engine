@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googlemock/src/gmock_main.cc
+/home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googlemock/src/gmock_main.cc
 iostream
 -
 gmock/gmock.h
-/home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googlemock/src/gmock/gmock.h
+/home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googlemock/src/gmock/gmock.h
 gtest/gtest.h
-/home/cezeri/NavigationEngine/NavEngGalRefactor/build/_deps/googletest-src/googlemock/src/gtest/gtest.h
+/home/cezeri/NavigationEngine/NavEngGalileo/build/_deps/googletest-src/googlemock/src/gtest/gtest.h
 tchar.h
 -
 

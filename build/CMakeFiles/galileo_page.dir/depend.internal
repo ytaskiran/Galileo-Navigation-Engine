@@ -4,5 +4,6 @@
 CMakeFiles/galileo_page.dir/src/galileo_page.cpp.o
  ../include/galileo_nav.hpp
  ../include/galileo_page.hpp
+ ../include/math_constants.hpp
  ../include/navigation_base.hpp
- /home/cezeri/NavigationEngine/NavEngGalRefactor/src/galileo_page.cpp
+ /home/cezeri/NavigationEngine/NavEngGalileo/src/galileo_page.cpp
